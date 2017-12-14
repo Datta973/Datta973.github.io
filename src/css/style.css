@@ -14,6 +14,8 @@ body{
     font-size: 2em;
 }
 
+
+
 .hbar{
     padding: 4px;
     border: solid 1px rgba(139,211,251,0.3);
@@ -22,6 +24,7 @@ body{
     margin: 4px;
     display: inline-block;
 }
+
 
 #stats{   
 }

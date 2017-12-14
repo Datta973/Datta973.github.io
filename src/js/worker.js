@@ -1,8 +1,9 @@
 $("#stats").hide();
 $(document).ready(()=>{
     $("#title").addClass('col-md-2 col-md-offset-5',250,function(){
-        $("#stats").show(250);
+        $("#stats").show(500);
     });
-    console.log($("#stats").children().addClass('hbar'));
-    
+    $("#stats").children().each(function(){
+        $(this).addClass('hbar');
+    })
 })
