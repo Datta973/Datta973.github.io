@@ -79,3 +79,11 @@ body{
     max-height:100%;
     animation: rotationreverse 30s infinite linear;
 }
+
+.hoverable{
+    opacity: 0.9;
+}
+
+.hoverable:hover{
+    opacity: 1;
+}
