@@ -45,6 +45,7 @@ body{
     border-top-color: transparent;
     transform: rotate(300deg);
     padding:4px;
+    -webkit-animation: rotation 30s infinite linear;
     animation: rotation 30s infinite linear;
 }
 
@@ -78,6 +79,7 @@ body{
 .icon{
     max-width:100%;
     max-height:100%;
+    -webkit-animation: rotationreverse 30s infinite linear;
     animation: rotationreverse 30s infinite linear;
 }
 
@@ -96,7 +98,7 @@ body{
     margin: 4px;
     display: inline-block;
     -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+ /*   -moz-animation: neon2 1.5s ease-in-out infinite alternate;*/
     animation: neon2 1.5s ease-in-out infinite alternate;
 }
 
