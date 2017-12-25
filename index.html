@@ -20,7 +20,11 @@
             <h1 id='title'>M.Vageswara Datta</h1>
         </div>
         <div id='stats'>
-            <div class="hbar" >Age : 18</div><br/>
+            <div id='age' class="hbar" >
+                    <script>
+                        $("#age").text(" Age : "+((new Date()).getUTCFullYear()-1999));
+                    </script>    
+            </div><br/>
             <div class="hbar" >Status : Pursuing B.Tech at AVN Institue of Engg & Technology</div><br/><br/>
             <center class='neon' >Programming is my Passion</center>
             <br/><br/><br/><br/><br/>
