@@ -7,6 +7,7 @@ body{
     background-color: black;
     padding:10px;
     font: 2em AgencyFB;
+    color: rgb(139,211,251);
 }
 
 #title{
@@ -31,7 +32,7 @@ body{
 
 .container{
     /*border:solid 2px rgba(139,211,251,0.7);*/
-    color:rgb(139,211,251);
+    
 }
 
 .semiArc{
@@ -87,3 +88,25 @@ body{
 .hoverable:hover{
     opacity: 1;
 }
+
+.neon{
+    
+    font-size: 2em;
+    color: #fff;
+    margin: 4px;
+    display: inline-block;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+
+
+@-moz-keyframes neon2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+  }
