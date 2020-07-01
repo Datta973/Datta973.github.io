@@ -1,77 +1,128 @@
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property='og:title' content='M.V. Datta' />
-    <meta property='og:image' content='//datta.ml/src/images/mvdatta.png' />
-    <meta property='og:description' content='Portfolio of M.V.Datta' />
-    <meta property='og:url' content='//datta.ml' />
-    <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="library/jquery/jquery-ui/jquery-ui.min.css">
-    <link rel="stylesheet" href="src/css/style.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="M.V. Datta" />
+    <meta property="og:image" content="//datta.ml/src/images/mvdatta.png" />
+    <meta property="og:description" content="Portfolio of M.V.Datta" />
+    <meta property="og:url" content="//datta.ml" />
     <script src="library/jquery/jquery.min.js"></script>
     <script src="library/jquery/jquery-ui/jquery-ui.min.js"></script>
     <script src="library/bootstrap/js/bootstrap.min.js"></script>
-    <title>M.V.Datta</title>
-</head>
-<body>
-    <div style="position:fixed;margin:-10px;" >
-        <img class="hoverable" src='src/images/vbar.png'/>
+    <title>M. V. Datta</title>
+  </head>
+  <body>
+    <div style="position:fixed;margin:-10px;">
+      <img class="hoverable" src="src/images/vbar.png" />
     </div>
-    
-    <div class="container">
 
-        <div class="row">
-            <h1 id='title'>M. V. Datta</h1>
+    <div>
+      <div id="title-wrapper">
+        <div id="title" class="neon">M. V. Datta</div>
+      </div>
+      <div id="details-wrapper">
+        <div class="details-panel">
+          <div id="panel-item-education">
+            <!-- Education -->
+
+            <ul>
+              <li>
+                B.Tech in Computer Science & Engineering ( 2016 - 2020 )
+                <ul>
+                  <li>Avn Institute of Engineering and Technology</li>
+                </ul>
+              </li>
+              <br />
+              <li>
+                XII ( Senior Secondary ) , MPC ( 2014 - 2016 )
+                <ul>
+                  <li>Narayana Junior College</li>
+                </ul>
+              </li>
+              <br />
+              <li>
+                X ( Secondary ) , 2014
+                <ul>
+                  <li>Siddhartha Model High School</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div id="panel-item-skills">
+            <!-- Skills -->
+            <ul>
+              <li>Algorithms & Data structures</li>
+              <li>Languages : Java, Javascript, Python, C#</li>
+              <li>Front-end : AngularJs, ReactJs, jQuery, WPF</li>
+              <li>Back-end : Node, php, Python</li>
+            </ul>
+          </div>
+          <div id="panel-item-projects">
+            <!-- Projects -->
+            <ul>
+              <li>
+                E.X.T.R.E.M.I.S
+                <ul>
+                  <li>
+                    An interface designed to automate repetitive/complex tasks
+                  </li>
+                  <li>
+                    Runs a custom interpreted language close to natural english
+                  </li>
+                  <li>C#, WPF ,Android, TCP Sockes</li>
+                </ul>
+              </li>
+              <li>MahouJs - A canvas framework for building html5 games</li>
+              <li>
+                Feedback portal - A student feedback system for college.
+                (HTML5/JS, PHP, MySql)
+              </li>
+              <li>
+                NodeManager - A GUI for managing node application projects
+              </li>
+              <li>
+                AIGamer - A toy project that can play android games on its own.
+                (Python, OpenCv, Android)
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id='stats'>
-            <div id='age' class="hbar" >
-                    <script>
-                        $("#age").text(" Age : "+((new Date()).getUTCFullYear()-1999));
-                    </script>    
-            </div><br/>
-            <div class="hbar" >Status : Pursuing B.Tech at AVN Institue of Engg & Technology</div><br/><br/>
-            <center class='neon' >Programming is my Passion</center>
-            <br/><br/><br/><br/><br/>
-            <div class="hbar" >Skills : Html,css,javascript,NodeJS,php</div><br/>
+      </div>
+      <div class="display-picture">
+        <div
+          class="picture circle-frame"
+          style="background-image: url(src/images/pro_pic.jpg);"
+        ></div>
+      </div>
+      <div class="icons-panel">
+        <div id="icon-education" class="circle">
+          <img
+            class="icon circle-frame"
+            src="src/images/college_front_view.jpg"
+          />
+          <div class="circle-title">Education</div>
+          <div class="semi-arc"></div>
         </div>
-        <div id='miniContainer' >
-            <div class='semiArc' >
-                <div class='circle' >
-                    <img class='icon' src='src/images/html.png' />
-                </div>
-            </div>
-            <div class='semiArc' >
-                <div class='circle' >
-                    <img class='icon' src='src/images/css.png' />
-                </div>
-            </div>
-            <div class='semiArc' >
-                <div class='circle' >
-                    <img class='icon' src='src/images/js.png' />
-                </div>
-            </div>
-            <div class='semiArc' >
-                <div class='circle' >
-                    <img class='icon' src='src/images/nodejs.png' />
-                </div>
-            </div>
-            <div class='semiArc' >
-                <div class='circle' >
-                    <img class='icon' src='src/images/phpmysql.png' />
-                </div>
-            </div>
-            
-            
+        <div id="icon-skills" class="circle">
+          <img class="icon circle-frame" src="src/images/skills_2.png" />
+          <div class="circle-title">Skills</div>
+          <div class="semi-arc"></div>
         </div>
-        
-    
-       
+        <div id="icon-projects" class="circle">
+          <img class="icon circle-frame" src="src/images/light_bulb_1.jpg" />
+          <div class="circle-title">Projects</div>
+          <div class="semi-arc"></div>
+        </div>
+      </div>
     </div>
-    <div style="position:fixed;right:0;top:0;" >
-            <img class="hoverable" style="transform: scaleX(-1);" src='src/images/vbar.png'/>
-        </div>
+    <div style="position:fixed;right:0;top:0;">
+      <img
+        class="hoverable"
+        style="transform: scaleX(-1);"
+        src="src/images/vbar.png"
+      />
+    </div>
     <script src="src/js/worker.js"></script>
-</body>
-
+  </body>
 </html>
